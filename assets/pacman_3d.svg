@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <!-- Neon glow filter -->
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur1" />
+      <feGaussianBlur stdDeviation="8" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <!-- 3D shadow/depth -->
+    <radialGradient id="pacBody" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FFFF00" />
+      <stop offset="60%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#CC9900" />
+    </radialGradient>
+    <radialGradient id="eyeShine" cx="30%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#222222" />
+    </radialGradient>
+  </defs>
+
+  <!-- Floating container -->
+  <g transform="translate(60, 60)">
+    <!-- Float animation -->
+    <animateTransform attributeName="transform" type="translate" values="60,55; 60,65; 60,55" dur="3s" repeatCount="indefinite" additive="replace" />
+
+    <!-- 3D spin group — simulated via scaleX oscillation -->
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1,1; 0.15,1; 1,1" dur="4s" repeatCount="indefinite" />
+
+      <!-- Pac-Man body with mouth chomp -->
+      <g filter="url(#neonGlow)">
+        <!-- Top jaw -->
+        <path fill="url(#pacBody)" stroke="#FFD700" stroke-width="1">
+          <animate attributeName="d"
+            values="M0,0 L40,0 A40,40 0 1,0 28,-28 Z;
+                    M0,0 L40,-5 A40,40 0 1,0 38,-14 Z;
+                    M0,0 L40,0 A40,40 0 1,0 28,-28 Z"
+            dur="0.5s" repeatCount="indefinite" />
+        </path>
+        <!-- Bottom jaw -->
+        <path fill="url(#pacBody)" stroke="#FFD700" stroke-width="1">
+          <animate attributeName="d"
+            values="M0,0 L40,0 A40,40 0 1,1 28,28 Z;
+                    M0,0 L40,5 A40,40 0 1,1 38,14 Z;
+                    M0,0 L40,0 A40,40 0 1,1 28,28 Z"
+            dur="0.5s" repeatCount="indefinite" />
+        </path>
+        <!-- Eye -->
+        <circle cx="-5" cy="-18" r="6" fill="url(#eyeShine)">
+          <animate attributeName="r" values="6;5;6" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="-6" cy="-19" r="3" fill="#111111" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Dot trail particles -->
+  <circle cx="95" cy="58" r="3" fill="#FFD700" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="108" cy="62" r="2.5" fill="#FF00FF" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="1.2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="113" cy="55" r="2" fill="#00FFFF" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.15;0.7" dur="0.8s" repeatCount="indefinite" />
+  </circle>
+</svg>

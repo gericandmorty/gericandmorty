@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="40" viewBox="0 0 800 40">
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Main Frame Top -->
+  <path d="M 10 40 L 10 20 Q 10 10 20 10 L 780 10 Q 790 10 790 20 L 790 40" fill="none" stroke="#3b82f6" stroke-width="4" filter="url(#glow)">
+    <animate attributeName="stroke" values="#3b82f6;#00FFFF;#3b82f6" dur="3s" repeatCount="indefinite" />
+  </path>
+  <!-- Decorative arcade details -->
+  <rect x="30" y="5" width="40" height="10" fill="#FFD700" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite" />
+  </rect>
+  <rect x="730" y="5" width="40" height="10" fill="#FFD700" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.5s" repeatCount="indefinite" />
+  </rect>
+  <!-- Scanning line effect -->
+  <rect x="15" y="15" width="770" height="2" fill="#00FFFF" opacity="0.3">
+    <animate attributeName="y" values="15;35;15" dur="4s" repeatCount="indefinite" />
+  </rect>
+</svg>

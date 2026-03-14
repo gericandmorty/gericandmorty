@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="60" viewBox="0 0 400 60">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap');
+    .text { font-family: 'Press Start 2P', cursive; font-size: 18px; fill: #FF00FF; filter: url(#glow); }
+  </style>
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <text x="50%" y="40" text-anchor="middle" class="text">
+    TECH ARSENAL
+    <animate attributeName="opacity" values="1;0.6;1" dur="2.5s" repeatCount="indefinite" />
+  </text>
+  <path d="M 50 50 L 350 50" stroke="#FF00FF" stroke-width="2" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="2.5s" repeatCount="indefinite" />
+  </path>
+</svg>

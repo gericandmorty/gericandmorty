@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="12" viewBox="0 0 800 12">
+  <defs>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FFFF" />
+      <stop offset="25%" stop-color="#FF00FF" />
+      <stop offset="50%" stop-color="#FFD700" />
+      <stop offset="75%" stop-color="#FF00FF" />
+      <stop offset="100%" stop-color="#00FFFF" />
+    </linearGradient>
+    <filter id="glow" x="-5%" y="-100%" width="110%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Top pixel row -->
+  <rect x="0" y="2" width="800" height="3" fill="url(#borderGrad)" filter="url(#glow)" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.5;0.9" dur="3s" repeatCount="indefinite" />
+  </rect>
+  <!-- Pixel dots along the line -->
+  <rect x="0" y="7" width="6" height="3" fill="#00FFFF" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.5s" repeatCount="indefinite" />
+  </rect>
+  <rect x="100" y="7" width="6" height="3" fill="#FF00FF" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="1.8s" repeatCount="indefinite" />
+  </rect>
+  <rect x="200" y="7" width="6" height="3" fill="#FFD700" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.2s" repeatCount="indefinite" />
+  </rect>
+  <rect x="300" y="7" width="6" height="3" fill="#00FFFF" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="2s" repeatCount="indefinite" />
+  </rect>
+  <rect x="400" y="7" width="6" height="3" fill="#FF00FF" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.5s" repeatCount="indefinite" />
+  </rect>
+  <rect x="500" y="7" width="6" height="3" fill="#FFD700" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="1.8s" repeatCount="indefinite" />
+  </rect>
+  <rect x="600" y="7" width="6" height="3" fill="#00FFFF" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.2s" repeatCount="indefinite" />
+  </rect>
+  <rect x="700" y="7" width="6" height="3" fill="#FF00FF" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="2s" repeatCount="indefinite" />
+  </rect>
+  <rect x="794" y="7" width="6" height="3" fill="#00FFFF" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.5s" repeatCount="indefinite" />
+  </rect>
+</svg>
