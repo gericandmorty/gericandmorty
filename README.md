@@ -6,7 +6,7 @@
 <!-- ═══════════════════ PAC-MAN SCREEN ═══════════════════ -->
 <p align="center">
   <img src="./assets/frame_top.svg" width="100%" alt="frame top" />
-  <img src="./assets/pacman_transparent.gif" width="100%" alt="Pac-Man" style="margin-top: -5px; margin-bottom: -5px;" />
+  <img src="./assets/pacman_wide.gif" width="100%" alt="Pac-Man" style="margin-top: -5px; margin-bottom: -5px;" />
   <img src="./assets/frame_bottom.svg" width="100%" alt="frame bottom" />
 </p>
 
