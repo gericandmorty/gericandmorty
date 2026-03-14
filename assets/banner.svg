@@ -1,0 +1,88 @@
+<svg width="800" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <pattern id="starfield" width="200" height="200" patternUnits="userSpaceOnUse">
+      <rect width="200" height="200" fill="#000000" />
+      <rect x="10" y="30" width="1.5" height="1.5" fill="#ffffff" opacity="0.3"><animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" /></rect>
+      <rect x="150" y="50" width="1" height="1" fill="#0891b2" opacity="0.4"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.5s" repeatCount="indefinite" /></rect>
+      <rect x="80" y="160" width="1.5" height="1.5" fill="#d946ef" opacity="0.3"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.8s" repeatCount="indefinite" /></rect>
+      <rect x="180" y="120" width="1" height="1" fill="#facc15" opacity="0.5"><animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite" /></rect>
+    </pattern>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap');
+      .pixel-font { font-family: 'Press Start 2P', cursive; }
+      .name { fill: #facc15; font-size: 32px; filter: drop-shadow(0 0 8px rgba(250, 204, 21, 0.6)); font-weight: bold; }
+      .title { fill: #0891b2; font-size: 10px; letter-spacing: 1px; opacity: 0.9; }
+      .separator { fill: #d946ef; font-size: 10px; }
+      .glow-border { stroke: #3b82f6; stroke-width: 2; fill: none; filter: url(#neonGlow); opacity: 0.4; }
+      .orbit-path { stroke: rgba(59, 130, 246, 0.1); stroke-width: 1; fill: none; stroke-dasharray: 2 4; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#starfield)" rx="10" />
+
+  <!-- Orbital Paths -->
+  <ellipse cx="400" cy="100" rx="150" ry="50" class="orbit-path" />
+  <ellipse cx="400" cy="100" rx="210" ry="70" class="orbit-path" />
+  <ellipse cx="400" cy="100" rx="270" ry="90" class="orbit-path" />
+  <ellipse cx="400" cy="100" rx="330" ry="110" class="orbit-path" />
+  <ellipse cx="400" cy="100" rx="390" ry="130" class="orbit-path" />
+
+  <!-- Planets with animateMotion for universal compatibility -->
+  
+  <!-- 1. Cyan Planet -->
+  <circle r="4" fill="#0891b2" filter="drop-shadow(0 0 4px #0891b2)">
+    <animateMotion dur="15s" repeatCount="indefinite" path="M -150,0 a 150,50 0 1,1 300,0 a 150,50 0 1,1 -300,0" transform="translate(400,100)" />
+  </circle>
+
+  <!-- 2. Magenta Planet with Ring -->
+  <g>
+    <animateMotion dur="25s" repeatCount="indefinite" path="M -210,0 a 210,70 0 1,1 420,0 a 210,70 0 1,1 -420,0" transform="translate(400,100)" />
+    <circle r="6" fill="#d946ef" filter="drop-shadow(0 0 5px #d946ef)" />
+    <ellipse rx="10" ry="3" stroke="#facc15" stroke-width="1" fill="none" transform="rotate(-15)" />
+  </g>
+
+  <!-- 3. Yellow Planet -->
+  <circle r="5" fill="#facc15" filter="drop-shadow(0 0 5px #facc15)">
+    <animateMotion dur="40s" repeatCount="indefinite" path="M -270,0 a 270,90 0 1,1 540,0 a 270,90 0 1,1 -540,0" transform="translate(400,100)" />
+  </circle>
+
+  <!-- 4. White Planet -->
+  <circle r="3" fill="#ffffff" filter="drop-shadow(0 0 3px #0891b2)">
+    <animateMotion dur="60s" repeatCount="indefinite" path="M -330,0 a 330,110 0 1,1 660,0 a 330,110 0 1,1 -660,0" transform="translate(400,100)" />
+  </circle>
+
+  <!-- 5. Blue Planet (Small) -->
+  <circle r="2" fill="#3b82f6" filter="drop-shadow(0 0 3px #3b82f6)">
+    <animateMotion dur="50s" repeatCount="indefinite" path="M -390,0 a 390,130 0 1,1 780,0 a 390,130 0 1,1 -780,0" transform="translate(400,100)" />
+  </circle>
+
+  <!-- Border Frame -->
+  <rect x="2" y="2" width="796" height="196" class="glow-border" rx="8" />
+
+  <!-- Content (Central Star / Name) -->
+  <text x="400" y="105" text-anchor="middle" class="pixel-font name">GERIC MORIT</text>
+  
+  <g class="pixel-font title">
+    <text x="400" y="145" text-anchor="middle">
+      <tspan fill="#0891b2">FULL STACK DEVELOPER</tspan>
+      <tspan class="separator"> | </tspan>
+      <tspan fill="#0891b2">DATABASE ENGINEER</tspan>
+    </text>
+  </g>
+
+  <!-- Arcade CRT Scanlines -->
+  <rect width="800" height="200" opacity="0.04" pointer-events="none">
+    <fill>
+      <pattern width="100%" height="4" patternUnits="userSpaceOnUse">
+        <rect width="100%" height="1" fill="#ffffff" />
+      </pattern>
+    </fill>
+  </rect>
+</svg>
