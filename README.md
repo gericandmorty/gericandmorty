@@ -38,12 +38,6 @@
   <img src="https://raw.githubusercontent.com/gericandmorty/gericandmorty/output/profile-night-view.svg" width="100%" alt="3D Contribution Graph">
 </div>
 
-<!-- ═══════════════════ PAC-MAN CONTRIBUTION GRAPH ═══════════════════ -->
-<br>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/gericandmorty/gericandmorty/output/pacman-dark.svg" alt="Pac-man contribution graph" width="100%">
-</p>
 
 <!-- ═══════════════════ BOTTOM BORDER ═══════════════════ -->
 <p align="center">
