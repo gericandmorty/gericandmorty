@@ -1,5 +1,10 @@
+<!-- ═══════════════════ MASTER FRAME TOP ═══════════════════ -->
+<p align="center" style="margin-bottom: 0px;">
+  <img src="./assets/profile_top.svg" width="100%" alt="Window Header">
+</p>
+
 <!-- ═══════════════════ TOP BANNER ═══════════════════ -->
-<p align="center">
+<p align="center" style="margin-top: 0px;">
   <img src="./assets/banner.svg" width="100%" alt="Arcade Banner">
 </p>
 
@@ -40,6 +45,11 @@
 
 
 <!-- ═══════════════════ BOTTOM BORDER ═══════════════════ -->
-<p align="center">
+<p align="center" style="margin-bottom: 0px;">
   <img src="./assets/border.svg" width="100%" alt="border">
+</p>
+
+<!-- ═══════════════════ MASTER FRAME BOTTOM ═══════════════════ -->
+<p align="center" style="margin-top: 0px;">
+  <img src="./assets/profile_bottom.svg" width="100%" alt="Window Footer">
 </p>

@@ -18,7 +18,7 @@
   </defs>
 
   <!-- Background Rect -->
-  <rect x="20" y="20" width="760" height="360" rx="15" fill="#0d1117" filter="url(#shadow)" />
+  <rect x="20" y="20" width="760" height="360" rx="15" fill="#0d1117" stroke="#30363d" stroke-width="2" filter="url(#shadow)" />
   
   <!-- Header Bar -->
   <path d="M 20 35 Q 20 20 35 20 L 765 20 Q 780 20 780 35 L 780 70 L 20 70 Z" fill="url(#header_grad)" />

@@ -1,0 +1,19 @@
+<svg width="1000" height="40" viewBox="0 0 1000 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="header_grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#30363d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Top Frame Border and Background -->
+  <path d="M 0 40 L 0 15 Q 0 0 15 0 L 985 0 Q 1000 0 1000 15 L 1000 40 Z" fill="url(#header_grad)" stroke="#30363d" stroke-width="2" />
+  
+  <!-- Window Controls -->
+  <circle cx="25" cy="20" r="7" fill="#ff5f56" />
+  <circle cx="50" cy="20" r="7" fill="#ffbd2e" />
+  <circle cx="75" cy="20" r="7" fill="#27c93f" />
+
+  <!-- Center Title -->
+  <text x="500" y="25" font-family="monospace" font-size="14" fill="#8b949e" text-anchor="middle">gericandmorty / README.md</text>
+</svg>
