@@ -53,10 +53,7 @@
 <br>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gericandmorty/gericandmorty/output/pacman-dark.svg">
-    <img src="https://raw.githubusercontent.com/gericandmorty/gericandmorty/output/pacman-light.svg" alt="Pac-man contribution graph" width="100%">
-  </picture>
+  <img src="https://raw.githubusercontent.com/gericandmorty/gericandmorty/output/pacman-dark.svg" alt="Pac-man contribution graph" width="100%">
 </p>
 
 <!-- ═══════════════════ BOTTOM BORDER ═══════════════════ -->
