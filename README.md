@@ -23,21 +23,10 @@
   <img src="./assets/divider.svg" width="100%" alt="divider">
 </p>
 
-<!-- ═══════════════════ COMMIT LOG ═══════════════════ -->
-<div align="center">
-  <img src="./assets/header_commit_log.svg" alt="Commit Log" />
-</div>
-
-<br>
-
-<div align="center">
-  <a href="https://github.com/gericandmorty">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=gericandmorty&bg_color=000000&color=00FFFF&line=FFD700&point=FF00FF&area_color=00FFFF&area=true&hide_border=true&custom_title=CONTRIBUTION%20ACTIVITY%20LOG">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=gericandmorty&bg_color=FFFFFF&color=0891B2&line=FFD700&point=FF00FF&area_color=0891B2&area=true&hide_border=true&custom_title=CONTRIBUTION%20ACTIVITY%20LOG" width="100%" alt="Contribution Graph">
-    </picture>
-  </a>
-</div>
+<!-- ═══════════════════ PHILOSOPHY ═══════════════════ -->
+<p align="center">
+  <img src="./assets/quote.svg" width="100%" alt="Socrates Quote">
+</p>
 
 <!-- ═══════════════════ DIVIDER ═══════════════════ -->
 <p align="center">
