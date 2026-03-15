@@ -3,14 +3,10 @@
   <img src="./assets/banner.svg" width="100%" alt="Arcade Banner">
 </p>
 
-<!-- ═══════════════════ ABOUT ME ═══════════════════ -->
+<!-- ═══════════════════ INFO & TECH ═══════════════════ -->
 <p align="center">
-  <img src="./assets/about.svg" width="100%" alt="About Me">
-</p>
-
-<!-- ═══════════════════ TECH STACK ═══════════════════ -->
-<p align="center">
-  <img src="./assets/techstack.svg" width="100%" alt="Tech Stack">
+  <img src="./assets/about.svg" width="48%" />
+  <img src="./assets/techstack.svg" width="48%" />
 </p>
 
 <br>
