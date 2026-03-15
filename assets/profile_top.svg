@@ -7,7 +7,8 @@
   </defs>
 
   <!-- Top Frame Border and Background -->
-  <path d="M 0 40 L 0 15 Q 0 0 15 0 L 985 0 Q 1000 0 1000 15 L 1000 40 Z" fill="url(#header_grad)" stroke="#30363d" stroke-width="2" />
+  <path d="M 1 40 L 1 15 Q 1 1 15 1 L 985 1 Q 999 1 999 15 L 999 40 Z" fill="url(#header_grad)" stroke="#30363d" stroke-width="2" />
+  <line x1="2" y1="40" x2="998" y2="40" stroke="#161b22" stroke-width="2" />
   
   <!-- Window Controls -->
   <circle cx="25" cy="20" r="7" fill="#ff5f56" />

@@ -1,7 +1,7 @@
-<svg width="1000" height="15" viewBox="0 0 1000 15" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="30" viewBox="0 0 1000 30" xmlns="http://www.w3.org/2000/svg">
   <!-- Bottom Frame Border and Background -->
-  <path d="M 0 0 L 0 0 Q 0 15 15 15 L 985 15 Q 1000 15 1000 0 L 1000 0 Z" fill="#0d1117" stroke="#30363d" stroke-width="2" />
+  <path d="M 1 0 L 1 15 Q 1 29 15 29 L 985 29 Q 999 29 999 15 L 999 0 Z" fill="#0d1117" stroke="#30363d" stroke-width="2" />
   
-  <!-- Subtle line to connect with the content above -->
-  <line x1="1" y1="0" x2="999" y2="0" stroke="#0d1117" stroke-width="2" />
+  <!-- Subtle line to hide the top stroke of the path and connect seamlessly -->
+  <line x1="2" y1="0" x2="998" y2="0" stroke="#0d1117" stroke-width="4" />
 </svg>
