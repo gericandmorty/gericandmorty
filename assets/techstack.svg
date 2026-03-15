@@ -1,4 +1,4 @@
-<svg width="450" height="420" viewBox="0 0 450 420" xmlns="http://www.w3.org/2000/svg">
+<svg width="450" height="500" viewBox="0 0 450 500" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="header_grad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#30363d;stop-opacity:1" />
@@ -17,43 +17,39 @@
     </filter>
   </defs>
 
-  <rect x="10" y="10" width="430" height="400" rx="12" fill="#0d1117" filter="url(#shadow)" />
+  <rect x="10" y="10" width="430" height="480" rx="12" fill="#0d1117" filter="url(#shadow)" />
   
   <path d="M 10 22 Q 10 10 22 10 L 428 10 Q 440 10 440 22 L 440 50 L 10 50 Z" fill="url(#header_grad)" />
   
-  <!-- Window Controls -->
   <circle cx="35" cy="30" r="6" fill="#ff5f56" />
   <circle cx="55" cy="30" r="6" fill="#ffbd2e" />
   <circle cx="75" cy="30" r="6" fill="#27c93f" />
 
-  <!-- Tab -->
   <path d="M 100 15 L 210 15 L 220 50 L 90 50 Z" fill="#0d1117" />
   <text x="130" y="35" font-family="monospace" font-size="13" fill="#c9d1d9">Stack.ts</text>
   <circle cx="118" cy="30" r="3.5" fill="#3178c6" />
 
-  <!-- Code Section -->
-  <g font-family="monospace" font-size="14" transform="translate(30, 85)">
+  <g font-family="monospace" font-size="14" transform="translate(35, 95)">
     <text y="0">
       <tspan fill="#ff79c6">const</tspan> <tspan fill="#8be9fd">stack</tspan>: <tspan fill="#8be9fd">string</tspan>[] = [
     </text>
-    <text y="30">
-      <tspan fill="#f1fa8c">  "TS"</tspan>, <tspan fill="#f1fa8c">"JS"</tspan>, <tspan fill="#f1fa8c">"React"</tspan>,
+    <text y="32">
+      <tspan fill="#f1fa8c">  "TypeScript"</tspan>,
     </text>
-    <text y="60">
-      <tspan fill="#f1fa8c">  "Node"</tspan>, <tspan fill="#f1fa8c">"PostgreSQL"</tspan>,
+    <text y="64">
+      <tspan fill="#f1fa8c">  "React"</tspan>, <tspan fill="#f1fa8c">"Node"</tspan>,
     </text>
-    <text y="90">
-      <tspan fill="#f1fa8c">  "Python"</tspan>, <tspan fill="#f1fa8c">"Next.js"</tspan>,
+    <text y="96">
+      <tspan fill="#f1fa8c">  "SQL"</tspan>, <tspan fill="#f1fa8c">"Next.js"</tspan>,
     </text>
-    <text y="120">
+    <text y="128">
       <tspan fill="#f1fa8c">  "AI Integration"</tspan>
     </text>
-    <text y="150">
+    <text y="160">
       <tspan fill="#f8f8f2">];</tspan>
     </text>
 
-    <!-- Additional Commented Out Info -->
-    <text y="210" font-style="italic" fill="#6272a4">// Learning mode: ON</text>
-    <text y="240" font-style="italic" fill="#6272a4">// Exploring LLMs</text>
+    <text y="220" font-style="italic" fill="#6272a4">// Continuous learning</text>
+    <text y="252" font-style="italic" fill="#6272a4">// Exploring LLMs</text>
   </g>
 </svg>
