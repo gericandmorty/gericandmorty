@@ -4,14 +4,10 @@
 </p>
 
 <!-- ═══════════════════ INFO & TECH ═══════════════════ -->
-<table align="center">
-  <tr>
-    <td><img src="./assets/about.svg" width="400" /></td>
-    <td><img src="./assets/techstack.svg" width="400" /></td>
-  </tr>
-</table>
-
-<br>
+<p align="center">
+  <img src="./assets/about.svg" width="48%" />
+  <img src="./assets/techstack.svg" width="48%" />
+</p>
 
 <br>
 

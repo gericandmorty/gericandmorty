@@ -1,4 +1,4 @@
-<svg width="450" height="500" viewBox="0 0 450 500" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="header_grad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#30363d;stop-opacity:1" />
@@ -17,39 +17,48 @@
     </filter>
   </defs>
 
-  <rect x="10" y="10" width="430" height="480" rx="12" fill="#0d1117" filter="url(#shadow)" />
+  <!-- Background Rect -->
+  <rect x="20" y="20" width="760" height="560" rx="15" fill="#0d1117" filter="url(#shadow)" />
   
-  <path d="M 10 22 Q 10 10 22 10 L 428 10 Q 440 10 440 22 L 440 50 L 10 50 Z" fill="url(#header_grad)" />
+  <!-- Header Bar -->
+  <path d="M 20 35 Q 20 20 35 20 L 765 20 Q 780 20 780 35 L 780 70 L 20 70 Z" fill="url(#header_grad)" />
   
-  <circle cx="35" cy="30" r="6" fill="#ff5f56" />
-  <circle cx="55" cy="30" r="6" fill="#ffbd2e" />
-  <circle cx="75" cy="30" r="6" fill="#27c93f" />
+  <!-- Window Controls -->
+  <circle cx="50" cy="45" r="8" fill="#ff5f56" />
+  <circle cx="75" cy="45" r="8" fill="#ffbd2e" />
+  <circle cx="100" cy="45" r="8" fill="#27c93f" />
 
-  <path d="M 100 15 L 210 15 L 220 50 L 90 50 Z" fill="#0d1117" />
-  <text x="130" y="35" font-family="monospace" font-size="13" fill="#c9d1d9">Stack.ts</text>
-  <circle cx="118" cy="30" r="3.5" fill="#3178c6" />
+  <!-- Tab -->
+  <path d="M 130 25 L 260 25 L 275 70 L 115 70 Z" fill="#0d1117" />
+  <text x="165" y="52" font-family="monospace" font-size="16" fill="#c9d1d9">Stack.ts</text>
+  <circle cx="152" cy="46" r="4.5" fill="#3178c6" />
 
-  <g font-family="monospace" font-size="14" transform="translate(35, 95)">
+  <!-- Code Section - Improved Spacing (Line height: 35px) -->
+  <g font-family="monospace" font-size="18" transform="translate(60, 110)">
     <text y="0">
       <tspan fill="#ff79c6">const</tspan> <tspan fill="#8be9fd">stack</tspan>: <tspan fill="#8be9fd">string</tspan>[] = [
     </text>
-    <text y="32">
+    <text y="35">
       <tspan fill="#f1fa8c">  "TypeScript"</tspan>,
     </text>
-    <text y="64">
+    <text y="70">
       <tspan fill="#f1fa8c">  "React"</tspan>, <tspan fill="#f1fa8c">"Node"</tspan>,
     </text>
-    <text y="96">
+    <text y="105">
       <tspan fill="#f1fa8c">  "SQL"</tspan>, <tspan fill="#f1fa8c">"Next.js"</tspan>,
     </text>
-    <text y="128">
-      <tspan fill="#f1fa8c">  "AI Integration"</tspan>
+    <text y="140">
+      <tspan fill="#f1fa8c">  "AI Integration"</tspan>,
     </text>
-    <text y="160">
+    <text y="175">
+      <tspan fill="#f1fa8c">  "Automation"</tspan>
+    </text>
+    <text y="210">
       <tspan fill="#f8f8f2">];</tspan>
     </text>
 
-    <text y="220" font-style="italic" fill="#6272a4">// Continuous learning</text>
-    <text y="252" font-style="italic" fill="#6272a4">// Exploring LLMs</text>
+    <!-- Comments -->
+    <text y="300" font-style="italic" fill="#6272a4">// Continuous learning mode</text>
+    <text y="335" font-style="italic" fill="#6272a4">// Exploring advanced LLMs</text>
   </g>
 </svg>
