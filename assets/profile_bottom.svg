@@ -1,7 +1,22 @@
-<svg width="1000" height="30" viewBox="0 0 1000 30" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="40" viewBox="0 0 1000 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="footer_grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#161b22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
   <!-- Bottom Frame Border and Background -->
-  <path d="M 1 0 L 1 15 Q 1 29 15 29 L 985 29 Q 999 29 999 15 L 999 0 Z" fill="#0d1117" stroke="#30363d" stroke-width="2" />
+  <path d="M 1 0 L 1 25 Q 1 39 15 39 L 985 39 Q 999 39 999 25 L 999 0 Z" fill="url(#footer_grad)" stroke="#30363d" stroke-width="2" />
   
   <!-- Subtle line to hide the top stroke of the path and connect seamlessly -->
-  <line x1="2" y1="0" x2="998" y2="0" stroke="#0d1117" stroke-width="4" />
+  <line x1="2" y1="0" x2="998" y2="0" stroke="#161b22" stroke-width="4" />
+
+  <!-- Window Controls (Right side) -->
+  <circle cx="925" cy="20" r="7" fill="#ff5f56" />
+  <circle cx="950" cy="20" r="7" fill="#ffbd2e" />
+  <circle cx="975" cy="20" r="7" fill="#27c93f" />
+
+  <!-- Footer Text -->
+  <text x="500" y="25" font-family="monospace" font-size="14" fill="#8b949e" text-anchor="middle">reach the end? is this the end? probably</text>
 </svg>
