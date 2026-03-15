@@ -3,6 +3,13 @@
   <img src="./assets/banner.svg" width="100%" alt="Arcade Banner">
 </p>
 
+<!-- ═══════════════════ ABOUT ME ═══════════════════ -->
+<p align="center">
+  <img src="./assets/about.svg" width="100%" alt="About Me">
+</p>
+
+<br>
+
 <!-- ═══════════════════ PAC-MAN SCREEN ═══════════════════ -->
 <p align="center">
   <img src="./assets/frame_top.svg" width="100%" alt="frame top" />
