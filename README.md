@@ -8,6 +8,11 @@
   <img src="./assets/about.svg" width="100%" alt="About Me">
 </p>
 
+<!-- ═══════════════════ TECH STACK ═══════════════════ -->
+<p align="center">
+  <img src="./assets/techstack.svg" width="100%" alt="Tech Stack">
+</p>
+
 <br>
 
 <!-- ═══════════════════ PAC-MAN SCREEN ═══════════════════ -->
