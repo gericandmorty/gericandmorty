@@ -2,7 +2,7 @@ name: GitHub Snake Game
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 */6 * * *" # Run every 6 hours
   workflow_dispatch:
   push:
     branches:
@@ -58,6 +58,7 @@ jobs:
       
       - name: Move Light SVG
         run: |
+          mkdir -p stage
           if [ -f pacman-contribution-graph.svg ]; then mv pacman-contribution-graph.svg stage/pacman-light.svg; fi
           if [ -f dist/pacman-contribution-graph.svg ]; then mv dist/pacman-contribution-graph.svg stage/pacman-light.svg; fi
 
