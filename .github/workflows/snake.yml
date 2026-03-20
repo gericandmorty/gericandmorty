@@ -20,12 +20,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Create stage directory
-        run: mkdir -p stage
-
-      # 3D Contribution Graph Generation
       - name: Generate 3D Contribution Graph
-        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
@@ -35,11 +31,10 @@ jobs:
           mkdir -p stage
           if [ -d profile-3d-contrib ]; then cp profile-3d-contrib/*.svg stage/; fi
 
-      # Deploy to output branch
       - name: Deploy to Output Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./stage
           publish_branch: output
-          commit_message: "Update profile stats [skip ci]"
+          commit_message: "Update 3D Profile Stats [skip ci]"
