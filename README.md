@@ -40,6 +40,7 @@
 
 <!-- ═══════════════════ 3D ARCADE LOG ═══════════════════ -->
 <div align="center">
+  <img src="https://raw.githubusercontent.com/gericandmorty/gericandmorty/output/github-contribution-grid-snake.svg" width="100%" alt="Snake Animation">
   <img src="https://raw.githubusercontent.com/gericandmorty/gericandmorty/output/profile-night-view.svg" width="100%" alt="3D Contribution Graph">
 </div>
 
