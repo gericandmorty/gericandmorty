@@ -1,4 +1,3 @@
-# gericandmorty
 
 <p align="center">
   <picture>
