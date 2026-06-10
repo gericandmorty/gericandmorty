@@ -16,7 +16,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;display=swap');
     
     .term-window {
-      fill: #0d1117; /* Matches default GitHub dark mode background */
+      fill: none; /* Transparent to match GitHub background exactly */
     }
     
     .text-base {
