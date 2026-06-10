@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
+  <defs>
+    <!-- Clip Paths for Typing Animations -->
+    <clipPath id="clip-cmd">
+      <rect id="rect-cmd" x="277" y="125" width="0" height="35" />
+    </clipPath>
+    <clipPath id="clip-brand">
+      <rect id="rect-brand" x="246" y="95" width="0" height="50" />
+    </clipPath>
+    <clipPath id="clip-subtitle">
+      <rect id="rect-subtitle" x="292" y="165" width="0" height="30" />
+    </clipPath>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;display=swap');
+    
+    .term-window {
+      fill: #000000; /* Black background for dark mode */
+    }
+    
+    .text-base {
+      font-family: 'Fira Code', monospace;
+      font-size: 18px;
+      fill: #f0f6fc;
+    }
+    
+    /* Terminal Prompt Colors */
+    .prompt-user {
+      fill: #3cf1a9;
+      font-weight: 600;
+    }
+    .prompt-host {
+      fill: #58a6ff;
+    }
+    .prompt-char {
+      fill: #8b949e;
+    }
+    
+    /* Command Syntax Highlighting */
+    .cmd-sudo { fill: #ff7b72; font-weight: 600; }
+    .cmd-rm { fill: #d29922; }
+    .cmd-dest { fill: #f0f6fc; }
+
+    /* Blinking Cursor Definition */
+    .cursor-rect {
+      fill: #f0f6fc;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    /* --- TIMELINE ANIMATIONS (10s Loop) --- */
+
+    /* Phase 1: Prompt and Typing "sudo rm -rf /" */
+    .initial-prompt {
+      animation: stage-1 10s infinite step-end;
+    }
+    @keyframes stage-1 {
+      0%, 30% { opacity: 1; visibility: visible; }
+      31%, 100% { opacity: 0; visibility: hidden; }
+    }
+
+    #rect-cmd {
+      font-family: 'Fira Code', monospace;
+      font-size: 18px;
+      width: 0ch;
+      animation: type-cmd 10s infinite linear;
+    }
+    @keyframes type-cmd {
+      0%, 8% { width: 0ch; }
+      22%, 30% { width: 13ch; }
+      31%, 100% { width: 0ch; }
+    }
+
+    .cursor-cmd {
+      font-family: 'Fira Code', monospace;
+      font-size: 18px;
+      animation: move-cursor-cmd 10s infinite linear, blink 0.8s infinite;
+    }
+    @keyframes move-cursor-cmd {
+      0%, 8% { transform: translateX(0ch); opacity: 1; }
+      22%, 30% { transform: translateX(13ch); opacity: 1; }
+      31%, 100% { transform: translateX(13ch); opacity: 0; }
+    }
+
+    /* Phase 2: Execution Flash */
+    .flash-overlay {
+      fill: #58a6ff;
+      opacity: 0;
+      animation: flash-screen 10s infinite ease-out;
+    }
+    @keyframes flash-screen {
+      0%, 28% { opacity: 0; }
+      29% { opacity: 0.85; }
+      30%, 100% { opacity: 0; }
+    }
+
+    /* Phase 3: Centered Brand Info */
+    .brand-container {
+      animation: stage-brand 10s infinite step-end;
+    }
+    @keyframes stage-brand {
+      0%, 30% { opacity: 0; visibility: hidden; }
+      31%, 90% { opacity: 1; visibility: visible; }
+      91%, 100% { opacity: 0; visibility: hidden; }
+    }
+
+    /* Brand Name typing */
+    #rect-brand {
+      font-family: 'Fira Code', monospace;
+      font-size: 32px;
+      width: 0ch;
+      animation: type-brand 10s infinite linear;
+    }
+    @keyframes type-brand {
+      0%, 31% { width: 0ch; }
+      45%, 90% { width: 16ch; }
+      91%, 100% { width: 0ch; }
+    }
+
+    .cursor-brand {
+      font-family: 'Fira Code', monospace;
+      font-size: 32px;
+      animation: move-cursor-brand 10s infinite linear, blink 0.8s infinite;
+    }
+    @keyframes move-cursor-brand {
+      0%, 31% { transform: translateX(0ch); opacity: 0; }
+      32% { transform: translateX(0ch); opacity: 1; }
+      45%, 48% { transform: translateX(16ch); opacity: 1; }
+      49%, 100% { transform: translateX(16ch); opacity: 0; }
+    }
+
+    .brand-text {
+      font-family: 'Fira Code', monospace;
+      font-size: 32px;
+      font-weight: 700;
+      fill: #f0f6fc;
+    }
+
+    /* Subtitle typing */
+    #rect-subtitle {
+      font-family: 'Fira Code', monospace;
+      font-size: 18px;
+      width: 0ch;
+      animation: type-subtitle 10s infinite linear;
+    }
+    @keyframes type-subtitle {
+      0%, 50% { width: 0ch; }
+      65%, 90% { width: 20ch; }
+      91%, 100% { width: 0ch; }
+    }
+
+    .cursor-subtitle {
+      font-family: 'Fira Code', monospace;
+      font-size: 18px;
+      animation: move-cursor-subtitle 10s infinite linear, blink 0.8s infinite;
+    }
+    @keyframes move-cursor-subtitle {
+      0%, 49% { transform: translateX(0ch); opacity: 0; }
+      50% { transform: translateX(0ch); opacity: 1; }
+      65%, 90% { transform: translateX(20ch); opacity: 1; }
+      91%, 100% { transform: translateX(20ch); opacity: 0; }
+    }
+
+    .subtitle-text {
+      font-family: 'Fira Code', monospace;
+      font-size: 18px;
+      fill: #8b949e;
+    }
+  </style>
+
+  <!-- Main Background Card -->
+  <rect width="800" height="300" rx="8" class="term-window" />
+
+  <!-- Stage 1: The Prompt and Typing Command -->
+  <g class="initial-prompt" transform="translate(0, 10)">
+    <text x="50" y="150" class="text-base">
+      <tspan class="prompt-user">gericmorit</tspan><tspan fill="#8b949e">@</tspan><tspan class="prompt-host">github</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#818cf8">~</tspan><tspan class="prompt-char">$ </tspan>
+    </text>
+    
+    <!-- Command text wrapped in clip path -->
+    <g clip-path="url(#clip-cmd)">
+      <text x="277" y="150" class="text-base">
+        <tspan class="cmd-sudo">sudo </tspan><tspan class="cmd-rm">rm -rf </tspan><tspan class="cmd-dest">/</tspan>
+      </text>
+    </g>
+    
+    <!-- Cursor for command -->
+    <g transform="translate(277, 133)">
+      <rect width="10" height="20" class="cursor-cmd cursor-rect" />
+    </g>
+  </g>
+  
+  <!-- Stage 3: Centered Brand Info -->
+  <g class="brand-container">
+    <!-- Brand Title -->
+    <g clip-path="url(#clip-brand)">
+      <text x="400" y="135" text-anchor="middle" class="brand-text">&lt;gericandmorty/&gt;</text>
+    </g>
+    <!-- Cursor for Brand -->
+    <g transform="translate(246, 107)">
+      <rect width="18" height="34" class="cursor-brand cursor-rect" />
+    </g>
+
+    <!-- Subtitle -->
+    <g clip-path="url(#clip-subtitle)">
+      <text x="400" y="185" text-anchor="middle" class="subtitle-text">full stack developer</text>
+    </g>
+    <!-- Cursor for Subtitle -->
+    <g transform="translate(292, 168)">
+      <rect width="10" height="20" class="cursor-subtitle cursor-rect" />
+    </g>
+  </g>
+  
+  <!-- Flash overlay for command execution screen glitch -->
+  <rect width="800" height="300" class="flash-overlay" rx="8" pointer-events="none" />
+</svg>
